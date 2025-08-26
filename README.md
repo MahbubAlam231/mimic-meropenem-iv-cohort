@@ -71,12 +71,12 @@ The script demonstrates how to join cohort rows to commonly used MIMIC tables to
 
 ## Quick Start
 
-### Option A — BigQuery
+### Option A: BigQuery
 
 1. Upload `sql_for_meropenem_iv_cohort.sql` to BigQuery Console or run via `bq` CLI.
 2. Set project + dataset and execute the script against **MIMIC-IV v3.1** (`mimiciv_v3_1_hosp`, `mimiciv_v3_1_icu`). ([PhysioNet][2])
 
-### Option B — Local PostgreSQL
+### Option B: Local PostgreSQL
 
 1. Load MIMIC-IV into Postgres (see community loaders). ([GitHub][5], [PhysioNet][6])
 2. Set your `search_path` to the MIMIC schemas, then run:
@@ -105,11 +105,11 @@ psql 'dbname=mimic4 user=<you> options=--search_path=mimiciv' -f sql/sql_for_mer
 
 ## Helpful Links
 
-* **MIMIC-IV dataset page (v3.1 / v2.2)** — versions, schema notes, and updates. ([PhysioNet][2])
-* **PhysioNet credentialing & DUA** — steps to request access. ([PhysioNet][4])
-* **CITI course instructions for PhysioNet** — recommended training track. ([PhysioNet][3])
-* **Postgres loading examples** — community loaders and scripts. ([GitHub][5], [PhysioNet][6])
-* **MIMIC-IV paper (Sci Data, 2023)** — canonical reference. ([PubMed][1], [Nature][7])
+* **MIMIC-IV dataset page (v3.1 / v2.2)**: versions, schema notes, and updates. ([PhysioNet][2])
+* **PhysioNet credentialing & DUA**: steps to request access. ([PhysioNet][4])
+* **CITI course instructions for PhysioNet**: recommended training track. ([PhysioNet][3])
+* **Postgres loading examples**: community loaders and scripts. ([GitHub][5], [PhysioNet][6])
+* **MIMIC-IV paper (Sci Data, 2023)**: canonical reference. ([PubMed][1], [Nature][7])
 
 ---
 
